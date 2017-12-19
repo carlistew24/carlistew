@@ -1,0 +1,33 @@
+<h1>
+3D PRINTING
+</h1>
+
+<body>
+<p> During 3D Printing I was absent for a good time and also hard core struggled with how to do it. I had a lot of ideas on what to 
+create, but was unable to create those ideas-- I try to understand computers, but I fail-- like always. </p>
+
+        <slideshow>
+                              <img class="mySlides" src= "Screenshot 2017-10-24 at 12.42.45 PM.png">
+                              <img class="mySlides" src= "Screenshot 2017-12-19 at 11.27.09 AM.png">
+                    
+                          
+                             
+                        </slideshow>
+                        <script>
+                              var myIndex = 0;
+                              carousel();
+                              function carousel() {
+                                    var i;
+                                    var x = document.getElementsByClassName("mySlides");
+                                    for (i = 0; i < x.length; i++) {
+                                          x[i].style.display = "none";  
+                                    }
+                                    myIndex++;
+                                    if (myIndex > x.length) {myIndex = 1}    
+                                    x[myIndex-1].style.display = "block";  
+                                    setTimeout(carousel, 4000); // Change image every 2 seconds
+                              }
+                        </script>
+    </p>
+  </body>
+</html>
